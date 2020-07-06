@@ -15,7 +15,7 @@ function currentLine(katzDeliLine) {
   let current = [];
   if (katzDeliLine.length > 0) {
     for(let i = 0; i < katzDeliLine.length; i++) {
-      current += (i + 1)
+      current += (i + 1) + ". " + katzDeliLine[i] + ", ";
     }
   }
 }
