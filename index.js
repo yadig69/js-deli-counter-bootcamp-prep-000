@@ -14,6 +14,8 @@ function nowServing(katzDeliLine) {
 function currentLine(katzDeliLine) {
   let current = [];
   if (katzDeliLine.length > 0) {
-    for(let i = 0; i < katzDeliLine.length; i++)
+    for(let i = 0; i < katzDeliLine.length; i++) {
+      current 
+    }
   }
 }
