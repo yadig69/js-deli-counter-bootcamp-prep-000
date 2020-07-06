@@ -23,16 +23,30 @@ function nowServing(katzDeliLine) {
   return (`Currently serving ${katzDeliLine.shift()}.`);
 }
 
+// function currentLine(katzDeliLine) {
+//   let current = [];
+//   if (katzDeliLine.length > 0) {
+//     for(let i = 0; i < katzDeliLine.length; i++) {
+//       current += (i + 1) + ". " + katzDeliLine[i] + ", ";
+//     }
+//     current = current.slice(0, current.length - 2);
+//       return "The line is currently:" + current;
+//     } else {
+//         return "The line is currently empty.";
+//     }
+//   }
+
+
 function currentLine(katzDeliLine) {
-  let current = [];
   if (katzDeliLine.length > 0) {
-    for(let i = 0; i < katzDeliLine.length; i++) {
-      current += (i + 1) + ". " + katzDeliLine[i] + ", ";
-    }
-    current = current.slice(0, current.length - 2);
-      return "The line is currently:" + current;
-    } else {
-        return "The line is currently empty.";
-    }
+    var output = "";
+    for(var i = 0; i < katzDeliLine.length; i++) {
+        output += (i + 1) + ". " + katzDeliLine[i] + ", ";
+      }
+    output = output.slice(0, -2);
+    return `The line is currently: ${output}`;
+  } else {
+    return "The line is currently empty.";
   }
+}
 
